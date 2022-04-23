@@ -1,0 +1,67 @@
+
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 15 20:14:05 2019
+
+@author: koreto
+import sleep
+"""
+#import time
+#import network
+#
+#station = network.WLAN(network.AP_IF)
+#
+#station.active(True)
+#print("open")
+#time.sleep(20)
+#
+#station.active(False)
+#print("close")
+
+#import utime
+#print("open")
+#utime.sleep(10)
+#print("close")
+import socket
+import machine
+
+
+# ブラウザに表示させるためのhtml
+# ポートは自身の環境に合わせてください
+html = """
+<html>
+<head> <title>LED</title> </head>
+<center>
+<h2>MicroPythonは多分いいぞ...!!</h2>
+<form>
+LED 4番ポート
+<button name="LED" value="ON_4" type="submit">ON</button>
+<button name="LED" value="OFF_4" type="submit">OFF</button><br><br>
+</form>
+</center>
+</html>
+"""
+
+LED_4 = machine.Pin(4, machine.Pin.OUT)
+
+#サーバー関係と制御
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.bind(('', 80))
+s.listen(5)
+
+while True:
+    conn, addr = s.accept()
+    request = conn.recv(1024)
+    request = str(request)
+    LEDON_4 = request.find('/?LED=ON_4')
+    LEDOFF_4 = request.find('/?LED=OFF_4')    
+
+    if LEDON_4 == 6:
+        LED_4.value(1)
+    if LEDOFF_4 == 6:
+        LED_4.value(0)
+    response = html
+    conn.send(response)
+    conn.close()
+
+

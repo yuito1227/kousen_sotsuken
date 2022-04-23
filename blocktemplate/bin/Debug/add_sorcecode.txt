@@ -1,0 +1,195 @@
+$search
+$variable
+$setup
+$main
+$func
+
+$RightBanper
+$
+const int RightBanper = 34; %%
+$
+  pinMode(RightBanper, INPUT); %%
+$
+$
+
+$LeftBanper
+$
+const int LeftBanper = 21; %%
+$
+  pinMode(LeftBanper, INPUT); %%
+$
+$
+
+
+$LineSensor
+$
+const int LineSensor = 35; %%
+$
+  pinMode(LineSensor, ANALOG); %%
+$
+$
+ %% %%
+int LineSensorOutput() %%
+{ %%
+  return ( long )analogRead( LineSensor ) * 100 / 4096; %%
+} %%
+
+$Mortor
+$
+const int RIGHT_F_logic = 17; %%
+const int RIGHT_R_PWM = 2; %%
+const int RIGHT_F_PWM = 3; %%
+const int RIGHT_R_logic = 15; %%
+ %%
+const int LEFT_F_logic = 32; %%
+const int LEFT_R_PWM = 0; %%
+const int LEFT_F_PWM = 1; %%
+const int LEFT_R_logic = 26; %%
+$
+  ledcSetup( RIGHT_F_PWM, 12800, 10 ); %%
+  ledcAttachPin( A12, RIGHT_F_PWM ); %%
+  ledcSetup( RIGHT_R_PWM, 12800, 10 ); %%
+  ledcAttachPin( A10, RIGHT_R_PWM ); %%
+  pinMode( RIGHT_F_logic, OUTPUT ); %%
+  pinMode( RIGHT_R_logic, OUTPUT ); %%
+  digitalWrite( RIGHT_F_logic, HIGH ); %%
+  digitalWrite( RIGHT_R_logic, HIGH ); %%
+   %%
+  ledcSetup( LEFT_F_PWM, 12800, 10 ); %%
+  ledcAttachPin( A18, LEFT_F_PWM ); %%
+  ledcSetup( LEFT_R_PWM, 12800, 10 ); %%
+  ledcAttachPin( A5, LEFT_R_PWM ); %%
+  pinMode( LEFT_F_logic, OUTPUT ); %%
+  pinMode( LEFT_R_logic, OUTPUT ); %%
+  digitalWrite( LEFT_F_logic, HIGH ); %%
+  digitalWrite( LEFT_R_logic, HIGH ); %%
+   %%
+$
+$
+ %% %%
+void Mortor( int LEFTpower, int RIGHTpower ) %%
+{ %%
+  if( RIGHTpower > 0 ) %%
+  { %%
+    digitalWrite( RIGHT_R_logic , HIGH ); %%
+    AnalogOutput( RIGHT_R_PWM , 0 ); %%
+    delay(100); %%
+    digitalWrite( RIGHT_F_logic , LOW ); %%
+    AnalogOutput( RIGHT_F_PWM , RIGHTpower ); %%
+  } %%
+  else if( RIGHTpower < 0 ) %%
+  { %%
+    digitalWrite( RIGHT_F_logic , HIGH ); %%
+    AnalogOutput( RIGHT_F_PWM , 0 ); %%
+    delay(100); %%
+    digitalWrite( RIGHT_R_logic , LOW ); %%
+    AnalogOutput( RIGHT_R_PWM , -RIGHTpower ); %%
+  } %%
+  else %%
+  { %%
+    AnalogOutput( RIGHT_F_PWM , 0 ); %%
+    AnalogOutput( RIGHT_R_PWM , 0 ); %%
+    digitalWrite( RIGHT_F_logic , LOW ); %%
+    digitalWrite( RIGHT_R_logic , LOW ); %%
+  } %%
+   %%
+  if( LEFTpower > 0 ) %%
+  { %%
+    digitalWrite( LEFT_R_logic , HIGH ); %%
+    AnalogOutput( LEFT_R_PWM , 0 ); %%
+    delay(100); %%
+    digitalWrite( LEFT_F_logic , LOW ); %%
+    AnalogOutput( LEFT_F_PWM , LEFTpower ); %%
+  } %%
+  else if( LEFTpower < 0 ) %%
+  { %%
+    digitalWrite( LEFT_F_logic , HIGH ); %%
+    AnalogOutput( LEFT_F_PWM , 0 ); %%
+    delay(100); %%
+    digitalWrite( LEFT_R_logic , LOW ); %%
+    AnalogOutput( LEFT_R_PWM , -LEFTpower ); %%
+  } %%
+  else %%
+  { %%
+    AnalogOutput( LEFT_F_PWM , 0 ); %%
+    AnalogOutput( LEFT_R_PWM , 0 ); %%
+    digitalWrite( LEFT_F_logic , LOW ); %%
+    digitalWrite( LEFT_R_logic , LOW ); %%
+  } %%
+} %%
+
+
+
+$Serial.print
+$
+$
+  Serial.begin( 115200 ); %%
+$
+$
+
+$AnalogOutput
+$
+$
+$
+$
+ %% %%void AnalogOutput(int pin, int power) %%
+{ %%
+  power = power * 10.23; %%
+  if( power > 1023 ) %%
+  { %%
+    ledcWrite( pin, 1023 ); %%
+  } %%
+  else if( power < 0 ) %%
+  { %%
+    ledcWrite( pin, 0 ); %%
+  } %%
+  else %%
+  { %%
+    ledcWrite( pin, power ); %%
+  } %%
+};
+
+$CompareWeather
+$
+$
+$
+$
+ %% %%bool CompareWeather( char* cmp ) %%
+{ %%
+  if ( WiFi.status() == WL_CONNECTED ) %%
+  { %%
+    HTTPClient http; %%
+    http.begin( \"http://api.openweathermap.org/data/2.5/weather?q=osaka,jp&APPID=" + API_key.Split(',')[0]
+   \"); %%
+    int httpCode = http.GET(); %%
+    if ( httpCode > 0 ) %%
+    { %%
+      DynamicJsonBuffer jsonBuffer; %%
+      String json = http.getString(); %%
+      JsonObject& weatherdata = jsonBuffer.parseObject( json ); %%
+      const char*weather = weatherdata[\"weather\"][0][\"main\"].as<char*>(); %%
+      if (!strcmp( weather, cmp) ) return true; %%
+      else return false; %%
+    } %%
+    else %%
+    { %%
+      Serial.println(\"天気を取得できませんでした\"); %%
+      return false; %%
+    } %%
+    http.end(); %%
+  } %%
+  else %%
+  { %%
+    Serial.println(\"Wifiが接続されていません。再起動してください。\"); %%
+    return false; %%
+  } %%
+}
+
+$getLocalTime(&timeInfo)
+$
+struct tm timeInfo; %%
+$
+$
+$
+  configTime(9 * 3600L, 0, \"ntp.nict.jp\", \"time.google.com\", \"ntp.jst.mfeed.ad.jp\"); %%
+

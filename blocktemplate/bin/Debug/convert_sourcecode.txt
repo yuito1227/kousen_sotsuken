@@ -1,0 +1,77 @@
+	$AnalogOutPut
+$AnalogOutput( #ComboBox1#, #TextBox1# ); %%
+
+$AnalogOutPutAsVariable
+$AnalogOutput( #ComboBox1# , #ComboBox2# ); %%
+
+$DigitalOutPut
+$digitalWrite( #ComboBox1#, #ComboBox2# ); %%
+
+$Delay
+$delay( #TextBox1# ); %%
+
+$GetWhatTimeIs
+$getLocalTime(&timeInfo); %%
+#ComboBox1# = timeInfo.tm_hour; %%
+#ComboBox2# = timeInfo.tm_min; %%
+#ComboBox3# = timeInfo.tm_sec; %%
+
+$GetWhatDayIs
+$getLocalTime(&timeInfo); %%
+#ComboBox1# = timeInfo.tm_year; %%
+#ComboBox2# = timeInfo.tm_mon; %%
+#ComboBox3# = timeInfo.tm_mday; %%
+
+$SetVariable
+$#ComboBox1# = 
+
+$ToNumber
+$#TextBox1#; %%
+
+$ToSensorOutput
+$LineSensorOutput(); %%
+
+$ToVariable
+$#ComboBox1#; %%
+
+$LogicVariableAndConst
+$#ComboBox1# #ComboBox2# #TextBox1#; %%
+
+$LogicVariableAndVariable
+$#ComboBox1# #ComboBox2# #ComboBox3#; %%
+
+$IfConst
+$if ( #ComboBox1# #ComboBox2# #TextBox1# ) %%
+
+$IfVariable
+$if ( #ComboBox1# #ComboBox2# #ComboBox3# ) %%
+
+$IfBanper
+$if ( digitalRead( #ComboBox1# ) == #ComboBox2# ) %%
+
+$IfElseConst
+$if ( #ComboBox1# #ComboBox2# #TextBox1# ) %%
+
+$IfElseVariable
+$if ( #ComboBox1# #ComboBox2# #ComboBox3# ) %%
+
+$IfElseBanper
+$if ( digitalRead( #ComboBox1# ) == #ComboBox2# ) %%
+
+$IfWeatherIs
+$if ( CompareWeather( "#ComboBox1#" ) ) %%
+
+$WhileConst
+$while ( #ComboBox1# #ComboBox2# #TextBox1# ) %%
+
+$WhileVariable
+$while ( #ComboBox1# #ComboBox2# #ComboBox3# ) %%
+
+$ForConst
+$for ( int times=0; times<#TextBox1#; times++ ) %%
+
+$ForVariable
+$for ( int times=0; times<#ComboBox1#; times++ ) %%
+
+$Mortor
+$Mortor( #TextBox1# , #TextBox2# ); %%

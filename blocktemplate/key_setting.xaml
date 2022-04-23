@@ -1,0 +1,37 @@
+﻿<Window x:Class="blocktemplate.key_setting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:blocktemplate"
+        mc:Ignorable="d"
+        Title="APIキー設定" Height="120" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="19" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="23" />
+            <RowDefinition Height="12" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="8" />
+            <ColumnDefinition Width="120*" />
+            <ColumnDefinition Width="8" />
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="12" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" Grid.Row="1" Height="Auto" 
+                   HorizontalAlignment="Stretch" Name="TextBlock1" 
+                   Text="APIキー" VerticalAlignment="Center" TextAlignment="Right" />
+        <TextBox Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3"
+                 Height="Auto" HorizontalAlignment="Stretch" 
+                 Name="DeviceName" VerticalAlignment="Center" />
+        <Button Content="設定完了" Grid.Column="3" Grid.Row="3" Width="75" HorizontalAlignment="Right" Name="btnLogin" Click="confirm"/>
+        <Button Content="キャンセル" Grid.Column="5" Grid.Row="3" 
+                Height="23" Width="75" HorizontalAlignment="Right" Name="Cancel" 
+                VerticalAlignment="Bottom"  Click="cancel"/>
+    </Grid>
+</Window>

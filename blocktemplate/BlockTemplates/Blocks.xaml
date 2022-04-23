@@ -1,0 +1,708 @@
+﻿  <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:local="clr-namespace:blocktemplate.BlockTemplates"
+                     x:Name="root" 
+                     x:Class="blocktemplate.MainViewModel">
+    
+    <Style x:Key="TextBlockPlane" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="2,2,2,0"/>
+    </Style>
+
+    <Style x:Key="ComboBoxPlane" TargetType="ComboBox">
+        <Setter Property="Margin" Value="2,0,2,0"/>
+    </Style>
+
+    <Style x:Key="TextBoxPlane" TargetType="TextBox">
+        <Setter Property="Margin" Value="2,0,2,0"/>
+        <Setter Property="Text" Value="0"/>
+    </Style>
+    
+    
+    <Style x:Key="TextBlockControlStatement" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="2,5,2,0"/>
+    </Style>
+
+    <Style x:Key="ComboBoxControlStatement" TargetType="ComboBox">
+        <Setter Property="Margin" Value="2,1,2,0"/>
+    </Style>
+
+    <Style x:Key="TextBoxControlStatement" TargetType="TextBox">
+        <Setter Property="Margin" Value="2,1,2,0"/>
+        <Setter Property="Text" Value="0"/>
+    </Style>
+
+    <ControlTemplate x:Key="SetVariable" TargetType="Thumb" >
+        <local:VariableFrame x:Name="Frame" >
+            <StackPanel  Orientation="Horizontal">
+                <ComboBox  x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}"/>
+                <TextBlock Text="を" Style="{StaticResource TextBlockPlane}"/>
+            </StackPanel>
+        </local:VariableFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="Delay" TargetType="Thumb">
+        <local:CommandFrame>
+            <StackPanel  Orientation="Horizontal">
+                <TextBox x:Name="TextBox1" Style="{ StaticResource TextBoxPlane}" PreviewTextInput="TextBox_Allow_Numbers"/>
+                <TextBlock Text="ミリ秒間待つ" Style="{StaticResource TextBlockPlane}"/>
+            </StackPanel>
+        </local:CommandFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="Mortor" TargetType="Thumb">
+        <local:CommandFrame>
+            <StackPanel  Orientation="Horizontal">
+                <TextBlock Text="モーターの左を" Style="{StaticResource TextBlockPlane}"/>
+                <TextBox x:Name="TextBox1" Style="{ StaticResource TextBoxPlane}"/>
+                <TextBlock Text="%で、右を" Style="{StaticResource TextBlockPlane}"/>
+                <TextBox x:Name="TextBox2" Style="{ StaticResource TextBoxPlane}"/>
+                <TextBlock Text="%で出力する" Style="{StaticResource TextBlockPlane}"/>
+            </StackPanel>
+        </local:CommandFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="BlueToothSerialPrint" TargetType="Thumb">
+        <local:CommandFrame>
+            <StackPanel  Orientation="Horizontal">
+                <TextBlock Text="BlueToothで" Style="{StaticResource TextBlockPlane}"/>
+                <TextBox x:Name="TextBox1" Style="{ StaticResource TextBoxPlane}" />
+                <TextBlock Text="を出力する" Style="{StaticResource TextBlockPlane}"/>
+            </StackPanel>
+        </local:CommandFrame>
+    </ControlTemplate>
+    <ControlTemplate x:Key="SerialPrint" TargetType="Thumb">
+        <local:CommandFrame>
+            <StackPanel  Orientation="Horizontal">
+                <TextBlock Text="シリアルモニタに" Style="{StaticResource TextBlockPlane}"/>
+                <TextBox x:Name="TextBox1" Style="{ StaticResource TextBoxPlane}" />
+                <TextBlock Text="を出力する" Style="{StaticResource TextBlockPlane}"/>
+            </StackPanel>
+        </local:CommandFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="AnalogOutPut" TargetType="Thumb">
+        <local:CommandFrame>
+            <StackPanel  Orientation="Horizontal">
+                <ComboBox  x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding AnalogPinItems}" />
+                <TextBlock Text="を" Style="{StaticResource TextBlockPlane}"/>
+                <TextBox x:Name="TextBox1" Style="{ StaticResource TextBoxPlane}" PreviewTextInput="TextBox_Allow_Numbers"/>
+                <TextBlock Text="％で出力する" Style="{StaticResource TextBlockPlane}" />
+            </StackPanel>
+        </local:CommandFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="AnalogOutPutAsVariable" TargetType="Thumb">
+        <local:CommandFrame>
+            <StackPanel  Orientation="Horizontal">
+                <ComboBox  x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding AnalogPinItems}" />
+                <TextBlock Text="を" Style="{StaticResource TextBlockPlane}"/>
+                <ComboBox x:Name="ComboBox2" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                <TextBlock Text="％で出力する" Style="{StaticResource TextBlockPlane}" />
+            </StackPanel>
+        </local:CommandFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="DigitalOutPut" TargetType="Thumb">
+        <local:CommandFrame>
+            <StackPanel  Orientation="Horizontal">
+                <ComboBox  x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding DigitalPinItems}" />
+                <TextBlock Text="を" Style="{StaticResource TextBlockPlane}"/>
+                <ComboBox x:Name="ComboBox2" Style="{ StaticResource ComboBoxPlane}" ItemsSource="{Binding BoolItems}" />
+                <TextBlock Text="にする" Style="{StaticResource TextBlockPlane}"/>
+            </StackPanel>
+        </local:CommandFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="GetWhatTimeIs1" TargetType="Thumb">
+        <local:CommandFrame>
+            <StackPanel Orientation="Vertical">
+                <StackPanel  Orientation="Horizontal">
+                    <TextBlock Text="現在の時間を" Style="{StaticResource TextBlockPlane}"/>
+                    <ComboBox  x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                    <TextBlock Text="に入れる" Style="{StaticResource TextBlockPlane}"/>
+                </StackPanel>
+            </StackPanel>
+        </local:CommandFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="GetWhatTimeIs2" TargetType="Thumb">
+        <local:CommandFrame>
+            <StackPanel Orientation="Vertical">
+                <StackPanel  Orientation="Horizontal">
+                    <TextBlock Text="現在の分数を" Style="{StaticResource TextBlockPlane}"/>
+                    <ComboBox  x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                    <TextBlock Text="に入れる" Style="{StaticResource TextBlockPlane}"/>
+                </StackPanel>
+            </StackPanel>
+        </local:CommandFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="GetWhatTimeIs3" TargetType="Thumb">
+        <local:CommandFrame>
+            <StackPanel Orientation="Vertical">
+                <StackPanel  Orientation="Horizontal">
+                    <TextBlock Text="現在の秒数を" Style="{StaticResource TextBlockPlane}"/>
+                    <ComboBox  x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                    <TextBlock Text="に入れる" Style="{StaticResource TextBlockPlane}"/>
+                </StackPanel>
+            </StackPanel>
+        </local:CommandFrame>
+    </ControlTemplate>
+
+
+    <ControlTemplate x:Key="GetWhatTimeIs" TargetType="Thumb">
+        <local:CommandFrame>
+            <StackPanel Orientation="Vertical">
+                <StackPanel  Orientation="Horizontal">
+                    <TextBlock Text="現在の時間を" Style="{StaticResource TextBlockPlane}"/>
+                    <ComboBox  x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                    <TextBlock Text="に、分を" Style="{StaticResource TextBlockPlane}"/>
+                    <ComboBox  x:Name="ComboBox2" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                </StackPanel>
+                <Label Height="5"/>
+                <StackPanel  Orientation="Horizontal">
+                    <TextBlock Text="に、秒を" Style="{StaticResource TextBlockPlane}"/>
+                    <ComboBox  x:Name="ComboBox3" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                    <TextBlock Text="に入れる" Style="{StaticResource TextBlockPlane}"/>
+                </StackPanel>
+            </StackPanel>
+        </local:CommandFrame>
+    </ControlTemplate>
+    <ControlTemplate x:Key="GetWhatDayIs" TargetType="Thumb">
+        <local:CommandFrame>
+            <StackPanel Orientation="Vertical">
+                <StackPanel  Orientation="Horizontal">
+                    <TextBlock Text="現在の年数を" Style="{StaticResource TextBlockPlane}"/>
+                    <ComboBox  x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                    <TextBlock Text="に、月を" Style="{StaticResource TextBlockPlane}"/>
+                    <ComboBox  x:Name="ComboBox2" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                </StackPanel>
+                <Label Height="5"/>
+                <StackPanel  Orientation="Horizontal">
+                    <TextBlock Text="に、日を" Style="{StaticResource TextBlockPlane}"/>
+                    <ComboBox  x:Name="ComboBox3" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                    <TextBlock Text="に入れる" Style="{StaticResource TextBlockPlane}"/>
+                </StackPanel>
+            </StackPanel>
+        </local:CommandFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="ToNumber" TargetType="Thumb">
+        <local:LogicFrame x:Name="Frame">
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="TextBox1" Style="{ StaticResource TextBoxPlane}"/>
+                <TextBlock Text="にする" Style="{StaticResource TextBlockPlane}"/> 
+            </StackPanel>
+        </local:LogicFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="ToVariable" TargetType="Thumb">
+        <local:LogicFrame x:Name="Frame">
+            <StackPanel Orientation="Horizontal">
+                <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                <TextBlock Text="と同じにする" Style="{StaticResource TextBlockPlane}"/>
+            </StackPanel>
+        </local:LogicFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="ToTimes" TargetType="Thumb">
+        <local:LogicFrame x:Name="Frame">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="今の" Style="{StaticResource TextBlockPlane}"/>
+                <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding TimeItems}" />
+                <TextBlock Text="と同じにする" Style="{StaticResource TextBlockPlane}"/>
+            </StackPanel>
+        </local:LogicFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="ToSensorOutput" TargetType="Thumb">
+        <local:LogicFrame x:Name="Frame">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="ラインセンサの出力にする" Style="{StaticResource TextBlockPlane}"/>
+            </StackPanel>
+        </local:LogicFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="LogicVariableAndVariable" TargetType="Thumb">
+        <local:LogicFrame x:Name="Frame">
+            <StackPanel Orientation="Horizontal">
+                <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                <ComboBox x:Name="ComboBox2" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding LogicItems}" />
+                <ComboBox x:Name="ComboBox3" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                <TextBlock Text="にする" Style="{StaticResource TextBlockPlane}"/>
+            </StackPanel>
+        </local:LogicFrame>
+    </ControlTemplate>
+      
+      
+
+    <ControlTemplate x:Key="LogicVariableAndConst" TargetType="Thumb">
+        <local:LogicFrame x:Name="Frame">
+            <StackPanel Orientation="Horizontal">
+                <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding VariableItems}" />
+                <ComboBox x:Name="ComboBox2" Style="{StaticResource ComboBoxPlane}" ItemsSource="{Binding LogicItems}" />
+                <TextBox x:Name="TextBox1" Style="{ StaticResource TextBoxPlane}" PreviewTextInput="TextBox_Allow_Numbers"/>
+                <TextBlock Text="にする" Style="{StaticResource TextBlockPlane}"/>
+            </StackPanel>
+        </local:LogicFrame>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IfBanper" TargetType="Thumb" >
+        <Grid>
+            <local:IfFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="もし" Style="{StaticResource TextBlockControlStatement}"/>
+                    <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding BanperItems}" />
+                    <TextBlock Text="が" Style="{StaticResource TextBlockControlStatement}"/>
+                    <ComboBox x:Name="ComboBox2" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding BanperBoolItems}" />
+                    <TextBlock Text="いれば" Style="{StaticResource TextBlockControlStatement}"/>
+                </StackPanel>
+            </local:IfFrame>
+            <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/if_left_down.png"/>
+                <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Margin="0,4,0,5" BorderThickness="0,1,0,1" Width="100" />
+                <Image Source="../Resources/if_right_down.png"/>
+            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+      
+
+    <ControlTemplate x:Key="IfVariable" TargetType="Thumb" >
+        <Grid>
+            <local:IfFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="もし" Style="{StaticResource TextBlockControlStatement}"/>
+                    <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding VariableItems}" />
+                    <ComboBox x:Name="ComboBox2" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding CompareItems}" />
+                    <ComboBox x:Name="ComboBox3" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding VariableItems}" />
+                    <TextBlock Text="ならば" Style="{StaticResource TextBlockControlStatement}"/>
+                </StackPanel>
+            </local:IfFrame>    
+            <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/if_left_down.png"/>
+                <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Margin="0,4,0,5" BorderThickness="0,1,0,1" Width="100" />
+                <Image Source="../Resources/if_right_down.png"/>
+            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IfElseBanper" TargetType="Thumb" >
+        <Grid>
+            <local:IfFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="もし" Style="{StaticResource TextBlockControlStatement}"/>
+                    <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding BanperItems}" />
+                    <TextBlock Text="が" Style="{StaticResource TextBlockControlStatement}"/>
+                    <ComboBox x:Name="ComboBox2" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding BanperBoolItems}" />
+                    <TextBlock Text="いれば" Style="{StaticResource TextBlockControlStatement}"/>
+                </StackPanel>
+            </local:IfFrame>
+
+            <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+
+            <local:ElseFrame x:Name="SubFrame"  Grid.Row="2" Grid.ColumnSpan="2" Width="Auto" HorizontalAlignment="Left">
+                <TextBlock Text="そうでないなら" Style="{StaticResource TextBlockControlStatement}"/>
+            </local:ElseFrame>
+
+            <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="SubSideLine" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left"/>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/if_left_down.png"/>
+                <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Margin="0,4,0,5" BorderThickness="0,1,0,0" Width="100" />
+                <Image Source="../Resources/if_right_down.png"/>
+            </StackPanel>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IfDigitalPinr" TargetType="Thumb" >
+        <Grid>
+            <local:IfFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="もし" Style="{StaticResource TextBlockControlStatement}"/>
+                    <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding DigitalPinItems}" />
+                    <TextBlock Text="が" Style="{StaticResource TextBlockControlStatement}"/>
+                    <ComboBox x:Name="ComboBox2" Style="{ StaticResource ComboBoxPlane}" ItemsSource="{Binding BoolItems}" />
+                    <TextBlock Text="ならば" Style="{StaticResource TextBlockPlane}"/>
+                </StackPanel>
+            </local:IfFrame>
+            <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/if_left_down.png"/>
+                <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Margin="0,4,0,5" BorderThickness="0,1,0,1" Width="100" />
+                <Image Source="../Resources/if_right_down.png"/>
+            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IfConst" TargetType="Thumb" >
+        <Grid>
+            <local:IfFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="もし" Style="{StaticResource TextBlockControlStatement}"/>
+                    <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding VariableItems}" />
+                    <ComboBox x:Name="ComboBox2" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding CompareItems}" />
+                    <TextBox x:Name="TextBox1" Style="{StaticResource TextBoxControlStatement}"/>
+                    <TextBlock Text="ならば" Style="{StaticResource TextBlockControlStatement}"/>
+                </StackPanel>
+            </local:IfFrame>
+            <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/if_left_down.png"/>
+                <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Margin="0,4,0,5" BorderThickness="0,1,0,1" Width="100" />
+                <Image Source="../Resources/if_right_down.png"/>
+            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+   
+
+    <ControlTemplate x:Key="IfElseVariable" TargetType="Thumb" >
+        <Grid>
+            <local:IfFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="もし" Style="{StaticResource TextBlockControlStatement}"/>
+                    <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding VariableItems}" />
+                    <ComboBox x:Name="ComboBox2" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding CompareItems}" />
+                    <ComboBox x:Name="ComboBox3" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding VariableItems}" />
+                    <TextBlock Text="ならば" Style="{StaticResource TextBlockControlStatement}"/>
+                </StackPanel>
+            </local:IfFrame>
+            
+            <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+
+            <local:ElseFrame x:Name="SubFrame"  Grid.Row="2" Grid.ColumnSpan="2" Width="Auto" HorizontalAlignment="Left">
+                <TextBlock Text="そうでないなら" Style="{StaticResource TextBlockControlStatement}"/>
+            </local:ElseFrame>
+            
+            <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="SubSideLine" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left"/>
+            
+            <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/if_left_down.png"/>
+                <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Margin="0,4,0,5" BorderThickness="0,1,0,0" Width="100" />
+                <Image Source="../Resources/if_right_down.png"/>
+            </StackPanel>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="IfElseConst" TargetType="Thumb" >
+        <Grid>
+            <local:IfFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="もし" Style="{StaticResource TextBlockControlStatement}"/>
+                    <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding VariableItems}" />
+                    <ComboBox x:Name="ComboBox2" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding CompareItems}" />
+                    <TextBox x:Name="TextBox1" Style="{StaticResource TextBoxControlStatement}"/>
+                    <TextBlock Text="ならば" Style="{StaticResource TextBlockControlStatement}"/>
+                </StackPanel>
+            </local:IfFrame>
+
+            <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+
+            <local:ElseFrame x:Name="SubFrame"  Grid.Row="2" Grid.ColumnSpan="2" Width="Auto" HorizontalAlignment="Left">
+                <TextBlock Text="そうでないなら" Style="{StaticResource TextBlockControlStatement}"/>
+            </local:ElseFrame>
+
+            <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="SubSideLine" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left"/>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/if_left_down.png"/>
+                <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Margin="0,4,0,5" BorderThickness="0,1,0,0" Width="100" />
+                <Image Source="../Resources/if_right_down.png"/>
+            </StackPanel>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="DoOnce" TargetType="Thumb" >
+        <Grid>
+            <local:WhileTrueFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="最初に一度だけ行う" Style="{StaticResource TextBlockPlane}" Margin="2,8,2,0"/>
+                </StackPanel>
+            </local:WhileTrueFrame>
+            <Border Background="#0093FF" BorderBrush="#5CBAC9" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/while_true_left_down.png"/>
+                <Border Background="#0093FF" BorderBrush="#5CBAC9" Margin="0,4,0,5" BorderThickness="0,1,0,1" Width="100" />
+                <Image Source="../Resources/loop_right_down.png"/>
+            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="WhileTrue" TargetType="Thumb" >
+        <Grid>
+            <local:WhileTrueFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="ずっと繰り返す" Style="{StaticResource TextBlockPlane}" Margin="2,8,2,0"/>
+                </StackPanel>
+            </local:WhileTrueFrame>
+            <Border Background="#0093FF" BorderBrush="#5CBAC9" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/while_true_left_down.png"/>
+                <Border Background="#0093FF" BorderBrush="#5CBAC9" Margin="0,4,0,5" BorderThickness="0,1,0,1" Width="100" />
+                <Image Source="../Resources/loop_right_down.png"/>
+            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="WhileVariable" TargetType="Thumb" >
+        <Grid>
+            <local:LoopFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding VariableItems}" />
+                    <ComboBox x:Name="ComboBox2" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding CompareItems}" />
+                    <ComboBox x:Name="ComboBox3" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding VariableItems}" />
+                    <TextBlock Text="の間繰り返す" Style="{StaticResource TextBlockControlStatement}"/>
+                </StackPanel>
+            </local:LoopFrame>
+            <Border Background="#0093FF" BorderBrush="#5CBAC9" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/loop_left_down.png"/>
+                <Border Background="#0093FF" BorderBrush="#5CBAC9" Margin="0,4,0,5" BorderThickness="0,1,0,0" Width="100" />
+                <Image Source="../Resources/loop_right_down.png"/>
+            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="WhileConst" TargetType="Thumb" >
+        <Grid>
+            <local:LoopFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding VariableItems}" />
+                    <ComboBox x:Name="ComboBox2" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding CompareItems}" />
+                    <TextBox x:Name="TextBox1"  Style="{StaticResource TextBoxControlStatement}"/>
+                    <TextBlock Text="の間繰り返す" Style="{StaticResource TextBlockControlStatement}"/>
+                </StackPanel>
+            </local:LoopFrame>
+            <Border Background="#0093FF" BorderBrush="#5CBAC9" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/loop_left_down.png"/>
+                <Border Background="#0093FF" BorderBrush="#5CBAC9" Margin="0,4,0,5" BorderThickness="0,1,0,0" Width="100" />
+                <Image Source="../Resources/loop_right_down.png"/>
+            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="ForConst" TargetType="Thumb" >
+        <Grid>
+            <local:LoopFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="TextBox1"  Style="{StaticResource TextBoxControlStatement}"/>
+                    <TextBlock Text="回繰り返す" Style="{StaticResource TextBlockControlStatement}"/>
+                </StackPanel>
+            </local:LoopFrame>
+            <Border Background="#0093FF" BorderBrush="#5CBAC9" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/loop_left_down.png"/>
+                <Border Background="#0093FF" BorderBrush="#5CBAC9" Margin="0,4,0,5" BorderThickness="0,1,0,0" Width="100" />
+                <Image Source="../Resources/loop_right_down.png"/>
+            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="ForVariable" TargetType="Thumb" >
+        <Grid>
+            <local:LoopFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding VariableItems}" />
+                    <TextBlock Text="回繰り返す" Style="{StaticResource TextBlockControlStatement}"/>
+                </StackPanel>
+            </local:LoopFrame>
+            <Border Background="#0093FF" BorderBrush="#5CBAC9" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/loop_left_down.png"/>
+                <Border Background="#0093FF" BorderBrush="#5CBAC9" Margin="0,4,0,5" BorderThickness="0,1,0,0" Width="100" />
+                <Image Source="../Resources/loop_right_down.png"/>
+            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+    <ControlTemplate x:Key="IfWeatherIs" TargetType="Thumb" >
+        <Grid>
+            <local:IfFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="もし天気が" Style="{StaticResource TextBlockControlStatement}"/>
+                    <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding WeatherItems}" />
+                    <TextBlock Text="ならば" Style="{StaticResource TextBlockControlStatement}"/>
+                </StackPanel>
+            </local:IfFrame>
+            <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/if_left_down.png"/>
+                <Border Background="#FFFFA710" BorderBrush="#FFFFB810" Margin="0,4,0,5" BorderThickness="0,1,0,1" Width="100" />
+                <Image Source="../Resources/if_right_down.png"/>
+            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="ForNew" TargetType="Thumb" >
+        <Grid>
+            <local:LoopFrame x:Name="MainFrame" Grid.Row="0" Grid.ColumnSpan="2">
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox x:Name="ComboBox1" Style="{StaticResource ComboBoxControlStatement}" ItemsSource="{Binding VariableItems}" />
+                    <TextBlock Text="を" Style="{StaticResource TextBlockControlStatement}"/>
+                    <TextBox x:Name="TextBox1"  Style="{StaticResource TextBoxControlStatement}"/>
+                    <TextBlock Text="から" Style="{StaticResource TextBlockControlStatement}"/>
+                    <TextBox x:Name="TextBox2"  Style="{StaticResource TextBoxControlStatement}"/>
+                    <TextBlock Text="ずつ" Style="{StaticResource TextBlockControlStatement}"/>
+                    <TextBox x:Name="TextBox3"  Style="{StaticResource TextBoxControlStatement}"/>
+                    <TextBlock Text="まで繰り返す" Style="{StaticResource TextBlockControlStatement}"/>
+                    
+                </StackPanel>
+            </local:LoopFrame>
+            <Border Background="#0093FF" BorderBrush="#5CBAC9" Height="31" Width="10" BorderThickness="1,0,1,0" x:Name="MainSideLine" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                <Image Source="../Resources/loop_left_down.png"/>
+                <Border Background="#0093FF" BorderBrush="#5CBAC9" Margin="0,4,0,5" BorderThickness="0,1,0,0" Width="100" />
+                <Image Source="../Resources/loop_right_down.png"/>
+            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="19"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="AUto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ControlTemplate>
+
+</ResourceDictionary>

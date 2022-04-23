@@ -1,0 +1,9 @@
+{
+a = 0
+getLocalTime(&timeInfo);
+a = timeInfo.tm_year + 1900;
+a = timeInfo.tm_mon + 1;
+a = timeInfo.tm_mday;
+a = 0
+}
+

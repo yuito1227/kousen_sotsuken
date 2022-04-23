@@ -1,0 +1,288 @@
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.csprojAssemblyReference.cache
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\FunctionFrame.g.cs
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\MainWindow.g.cs
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\App.g.cs
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.cache
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.lref
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\FunctionFrame.baml
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\MainWindow.baml
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.exe
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.pdb
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\bin\Debug\blocktemplate.exe.config
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\bin\Debug\blocktemplate.exe
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\bin\Debug\blocktemplate.pdb
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\Blocks.baml
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.g.resources
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.Properties.Resources.resources
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.csproj.GenerateResource.cache
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.csproj.CoreCompileInputs.cache
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\TextFrame.g.cs
+C:\Users\kaneda\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\TextFrame.baml
+F:\卒研\P-style\blocktemplate\blocktemplate\bin\Debug\blocktemplate.exe.config
+F:\卒研\P-style\blocktemplate\blocktemplate\bin\Debug\blocktemplate.exe
+F:\卒研\P-style\blocktemplate\blocktemplate\bin\Debug\blocktemplate.pdb
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.csprojAssemblyReference.cache
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\FunctionFrame.g.cs
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\TextFrame.g.cs
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\MainWindow.g.cs
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\App.g.cs
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.cache
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.lref
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\Blocks.baml
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\FunctionFrame.baml
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\TextFrame.baml
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\MainWindow.baml
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.g.resources
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.Properties.Resources.resources
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.csproj.GenerateResource.cache
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.csproj.CoreCompileInputs.cache
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.exe
+F:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.pdb
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.csprojAssemblyReference.cache
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\FunctionFrame.g.cs
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\TextFrame.g.cs
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\MainWindow.g.cs
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\App.g.cs
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.cache
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.lref
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.exe
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.pdb
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\bin\Debug\blocktemplate.exe.config
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\bin\Debug\blocktemplate.exe
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\bin\Debug\blocktemplate.pdb
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\Blocks.baml
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\FunctionFrame.baml
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\TextFrame.baml
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\MainWindow.baml
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.g.resources
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.Properties.Resources.resources
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.csproj.GenerateResource.cache
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.csproj.CoreCompileInputs.cache
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\Blocks.g.cs
+D:\卒研\P-style\blocktemplate\blocktemplate\bin\Debug\blocktemplate.exe.config
+D:\卒研\P-style\blocktemplate\blocktemplate\bin\Debug\blocktemplate.exe
+D:\卒研\P-style\blocktemplate\blocktemplate\bin\Debug\blocktemplate.pdb
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.csprojAssemblyReference.cache
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\Blocks.g.cs
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\FunctionFrame.g.cs
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\TextFrame.g.cs
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\MainWindow.g.cs
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\App.g.cs
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.cache
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.lref
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\Blocks.baml
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\FunctionFrame.baml
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\TextFrame.baml
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\MainWindow.baml
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.g.resources
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.Properties.Resources.resources
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.csproj.GenerateResource.cache
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.csproj.CoreCompileInputs.cache
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.exe
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\blocktemplate.pdb
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\IfFrame.g.cs
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\IfFrame.baml
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\ElseFrame.g.cs
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\ElseFrame.baml
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\CommandFrame.g.cs
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\CommandFrame.baml
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\LoopFrame.g.cs
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\LoopFrame.baml
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\WhileTrueFrame.g.cs
+C:\Users\koreto\source\repos\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\WhileTrueFrame.baml
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\CommandFrame.g.cs
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\ElseFrame.g.cs
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\IfFrame.g.cs
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\LoopFrame.g.cs
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\WhileTrueFrame.g.cs
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\CommandFrame.baml
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\ElseFrame.baml
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\IfFrame.baml
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\LoopFrame.baml
+D:\卒研\P-style\blocktemplate\blocktemplate\obj\Debug\BlockTemplates\WhileTrueFrame.baml
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe.config
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.pdb
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csprojAssemblyReference.cache
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.g.cs
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\App.g.cs
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.cache
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.lref
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.baml
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.baml
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.g.resources
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.Properties.Resources.resources
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csproj.GenerateResource.cache
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.exe
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.pdb
+D:\卒研\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe.config
+D:\卒研\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe
+D:\卒研\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.pdb
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csprojAssemblyReference.cache
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.g.cs
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\App.g.cs
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.cache
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.lref
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.baml
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.baml
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.g.resources
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.Properties.Resources.resources
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csproj.GenerateResource.cache
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csproj.CoreCompileInputs.cache
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.exe
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.pdb
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe.config
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.pdb
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csprojAssemblyReference.cache
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.g.cs
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\CommandFrame.g.cs
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\ElseFrame.g.cs
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\FunctionFrame.g.cs
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\IfFrame.g.cs
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\LoopFrame.g.cs
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\TextFrame.g.cs
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\WhileTrueFrame.g.cs
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.g.cs
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\App.g.cs
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.cache
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.lref
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.baml
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\CommandFrame.baml
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\ElseFrame.baml
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\FunctionFrame.baml
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\IfFrame.baml
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\LoopFrame.baml
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\TextFrame.baml
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\WhileTrueFrame.baml
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.baml
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.g.resources
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.Properties.Resources.resources
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csproj.GenerateResource.cache
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csproj.CoreCompileInputs.cache
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.exe
+C:\Users\kaneda\Desktop\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.pdb
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.g.cs
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.g.cs
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe.config
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.pdb
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csprojAssemblyReference.cache
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.g.cs
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.g.cs
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\App.g.cs
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.cache
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.lref
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.baml
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.baml
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.g.resources
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.Properties.Resources.resources
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csproj.GenerateResource.cache
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csproj.CoreCompileInputs.cache
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.exe
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.pdb
+F:\卒研\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe.config
+F:\卒研\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe
+F:\卒研\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.pdb
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csprojAssemblyReference.cache
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.g.cs
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.g.cs
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\App.g.cs
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.cache
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.lref
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.baml
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.baml
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.g.resources
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.Properties.Resources.resources
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csproj.GenerateResource.cache
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.exe
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.pdb
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\wifi_setting.g.cs
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\wifi_setting.baml
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe.config
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.pdb
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csprojAssemblyReference.cache
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.g.cs
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.g.cs
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\wifi_setting.g.cs
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\App.g.cs
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.cache
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.lref
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.baml
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.baml
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\wifi_setting.baml
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.g.resources
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.Properties.Resources.resources
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csproj.GenerateResource.cache
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.exe
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.pdb
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\bluetooth_setting.g.cs
+D:\マイ ドキュメント\blocktemplatefag\blocktemplate\obj\Debug\bluetooth_setting.baml
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\bluetooth_setting.g.cs
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\wifi_setting.g.cs
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\bluetooth_setting.baml
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\wifi_setting.baml
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\show_source_code.g.cs
+C:\Users\kaneda\Desktop\有隅\blocktemplatefag\blocktemplate\obj\Debug\show_source_code.baml
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\bluetooth_setting.g.cs
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\show_source_code.g.cs
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\wifi_setting.g.cs
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\bluetooth_setting.baml
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\show_source_code.baml
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\wifi_setting.baml
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\key_setting.g.cs
+D:\マイ　デクストップ\blocktemplatefag\blocktemplate\obj\Debug\key_setting.baml
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\key_setting.g.cs
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\bluetooth_setting.g.cs
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\show_source_code.g.cs
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\wifi_setting.g.cs
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\key_setting.baml
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\bluetooth_setting.baml
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\show_source_code.baml
+D:\卒研\blocktemplatefag\blocktemplate\obj\Debug\wifi_setting.baml
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\key_setting.g.cs
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\bluetooth_setting.g.cs
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\show_source_code.g.cs
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\key_setting.baml
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\bluetooth_setting.baml
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\show_source_code.baml
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csproj.CoreCompileInputs.cache
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe.config
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.exe
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\bin\Debug\blocktemplate.pdb
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csprojAssemblyReference.cache
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.g.cs
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\key_setting.g.cs
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\bluetooth_setting.g.cs
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.g.cs
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\show_source_code.g.cs
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\wifi_setting.g.cs
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\App.g.cs
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.cache
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate_MarkupCompile.lref
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\BlockTemplates\Blocks.baml
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\key_setting.baml
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\bluetooth_setting.baml
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\MainWindow.baml
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\show_source_code.baml
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\wifi_setting.baml
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.g.resources
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.Properties.Resources.resources
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csproj.GenerateResource.cache
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.csproj.CoreCompileInputs.cache
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.exe
+E:\Users\yuito\Desktop\卒研\blocktemplatefag\blocktemplate\obj\Debug\blocktemplate.pdb
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\progress_bar.g.cs
+F:\卒研\blocktemplatefag\blocktemplate\obj\Debug\progress_bar.baml

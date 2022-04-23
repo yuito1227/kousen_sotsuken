@@ -1,0 +1,39 @@
+﻿<Window x:Class="blocktemplate.MainWindow" Name="WINDOW"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:blocktemplate"
+        mc:Ignorable="d"
+        Title="ESP32制御支援ツール" Height="1050" Width="1920">
+    <Window.Resources>
+        <ResourceDictionary Source="BlockTemplates/Blocks.xaml"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="オプション">
+                <MenuItem  Header="Wi-FI設定" Click="Setting_WiFi_Point" />
+                <MenuItem  Header="Bluetooth設定" Click="Setting_Blue_Tooth_Device" />
+                <MenuItem  Header="APIキー設定" Click="Setting_API_key" />
+                <MenuItem  Name="show_source_code" Header="スクリプト変換時にソースコードを表示する"  IsCheckable="True"  IsChecked ="True" />
+                <MenuItem  Name="show_work_space" Header=" 枠を表示する"  IsCheckable="True"  IsChecked ="True" />
+                <MenuItem  Header="ファイルに保存" Click="Save_Blocks"/>
+                <MenuItem  Header="ファイルから読み込む" Click="Load_Blocks"/>
+            </MenuItem>
+        </Menu>
+        <Canvas  Background="AliceBlue" Name="area" Grid.Row="1">
+            <Border x:Name="TrashArea" Background="White"   Canvas.Left="10" BorderBrush="#FF878686" Canvas.Top="10" Width="300" BorderThickness="2" Height="980"/>
+            <Border x:Name="CopyArea" Background="#FFA5E6F9"  BorderBrush="#FF0080FF" Canvas.Top="10" Width="300" BorderThickness="2" Height="300" Canvas.Right="10">
+            </Border>
+            <Border x:Name="BuildArea" Background="#FFBCF9A5"  BorderBrush="#FF117E00" Canvas.Top="350" Width="300" BorderThickness="2" Height="630" Canvas.Right="10"/>
+            <ScrollViewer x:Name="ScrollViewer" Height="980" Canvas.Left="10" Canvas.Top="10">
+                <Canvas x:Name="ArrangeArea" Canvas.Left="10"   Width="300" Height="980" />
+            </ScrollViewer>
+        </Canvas>
+        
+    </Grid>
+</Window>
